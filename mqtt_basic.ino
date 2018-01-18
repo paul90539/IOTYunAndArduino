@@ -207,7 +207,8 @@ String mySk(){
   }
   
   ret.trim();
-  ret = ret.substring(18, 82);
+  int index = ret.indexOf("getsk") + 7;
+  ret = ret.substring(index, index + 64);
   delay(50);  
   return ret;
 }
